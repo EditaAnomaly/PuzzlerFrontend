@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 class Menu extends Component {
     state={
@@ -11,7 +11,7 @@ class Menu extends Component {
                 {this.state.options.map(option=> <button className="btn btn-outline-success me-5 btn-lg" key={option}>{option}</button>)}
             </ul>
         </React.Fragment>
-        );
+        )
     }   
 }
  

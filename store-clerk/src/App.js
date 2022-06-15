@@ -1,17 +1,16 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Menu from './components/Menu';
+import React from 'react'
+import { useState } from 'react'
+import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom' 
+import Home from './components/Home'
 
 function App() {
- 
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="content">
-        <Menu/>
-      </div>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+    </Routes>
+    </Router>
+  )
 }
 
 export default App;

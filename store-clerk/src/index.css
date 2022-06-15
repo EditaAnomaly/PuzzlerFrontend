@@ -23,6 +23,16 @@ body {
   pointer-events: none;
 }
 
+.logout{
+  background-image: url(./images/logout2.png);
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-style: none;
+  top: 120px;
+  left: 1800px;
+}
+
 .App-icon{
   width: 60px;
 }
@@ -40,7 +50,6 @@ body {
 .App-link {
   color: #61dafb;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
