@@ -1,11 +1,10 @@
 import React from 'react'
 import logoblue from './../images/logoblue.png'
 import help from './../images/help.png'
-import logout from './../images/logout.png'
 import { useMsal } from "@azure/msal-react";
 
 const Navbar = () => {
-    const { instance, accounts } = useMsal();
+    const { instance } = useMsal();
     const handleLogout = () => {
         instance.logoutRedirect().catch(
           console.error

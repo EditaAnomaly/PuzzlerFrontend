@@ -1,4 +1,4 @@
-import React, { Component }  from 'react'
+import React  from 'react'
 import { useMsal } from "@azure/msal-react";
 import { useEffect, useState } from "react";
 
@@ -34,6 +34,7 @@ export const AppGuard = (props) => {
 
     useEffect(() => {
         onLoad();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [instance]);
 
     return (
