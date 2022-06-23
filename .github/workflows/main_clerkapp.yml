@@ -22,10 +22,11 @@ jobs:
           node-version: '14.x'
 
       - name: npm install, build, and test
-        run: |
+      - run: |
+          cd /store-clerk/
           npm install --legacy-peer-deps
           npm run build --if-present
-          npm run test --if-present
+          displayName: 'npm install and build'
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
